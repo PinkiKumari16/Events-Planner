@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../public/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navBar{
+    height: 7vh;
+    width: 100%;
+    background-color: rgb(195, 248, 195);
+    line-height: 7vh;
+    font-size: 1.3em; 
+}
+
+ul{
+    display: flex;
+    justify-content:space-around;
+}
+
+li{
+    list-style: none;  
+}

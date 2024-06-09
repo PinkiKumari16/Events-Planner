@@ -1,0 +1,33 @@
+.mainContent{
+    height: 95%;
+    background-color: #99d2ec;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0 0 5em;
+    color: #fff;
+}
+.inputBox{
+    height: 2.5em;
+    background-color: #fff;
+    padding: 6px 0 0 15px;
+    display: flex;
+    
+    width: 90%;
+    border-radius: 1em;
+    margin-top: 2em;
+    
+}
+.input{
+    height: 2em;
+    width: 80%;
+    padding: 3px;
+    outline: none;
+    font-size: 1em;
+    border-style: none;
+}
+.listContener{
+    height: 90%;
+    /* background-color: green; */
+    margin-top: 4em;
+}

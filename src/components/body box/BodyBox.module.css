@@ -1,0 +1,10 @@
+.mainBox{
+    height: 81vh;
+    width: 60vw;
+    /* background-color: pink; */
+    border: 5px solid white;
+    border-radius: 1em;
+    background-color: transparent;
+    display: flex;
+    margin: 5.5em 20em 0 23em;
+}

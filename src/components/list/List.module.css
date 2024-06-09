@@ -1,0 +1,24 @@
+.listBox{
+    height: 3em;
+    background-color: #fff;
+    color: black;
+    width: 85%;
+    border-radius: 0.6em;
+    justify-content:space-between;
+    margin: 0 0 1em 1.5em;
+    display: flex;
+    padding: 0 1em 0 0;
+    
+
+}
+.timeAndCheckBox{
+    display: flex;
+    justify-content: space-between;
+    line-height: 3em;
+    width: 5vw;
+
+}
+.iteam{
+    padding: 0.6em;
+    
+}
