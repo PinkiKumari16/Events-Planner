@@ -1,0 +1,17 @@
+.LoginBody{
+    height: 93vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: var(--white-color); 
+}
+
+input,
+button{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: transparent ;
+}
+

@@ -1,8 +1,8 @@
 .listBox{
     height: 3em;
-    background-color: #fff;
+    background-color: var(--white-color);
     color: black;
-    width: 85%;
+    width: 90%;
     border-radius: 0.6em;
     justify-content:space-between;
     margin: 0 0 1em 1.5em;
@@ -15,10 +15,16 @@
     display: flex;
     justify-content: space-between;
     line-height: 3em;
-    width: 5vw;
+    width: 6vw;
 
 }
 .iteam{
-    padding: 0.6em;
+    padding: 0.6em 0 0 0;
+    width: 100%;
+
     
+}
+.dotIcon{
+    color: var(--blue-color);
+    margin: 0.4em;
 }

@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
+    /* -webkit-font-smoothing: antialiased; */
 }
 
 body{
@@ -11,11 +13,12 @@ body{
 }
 
 .navBar{
-    height: 7vh;
+    height: 8vh;
     width: 100%;
-    background-color: rgb(195, 248, 195);
+    background-color: #a39fe0;
     line-height: 7vh;
     font-size: 1.3em; 
+    box-shadow: 0 0 10px #2c292c;
 }
 
 ul{
@@ -26,3 +29,20 @@ ul{
 li{
     list-style: none;  
 }
+
+:root{
+    --primary-color: #2aa5dd;
+    --blue-color: #5c6bc0;
+    --white-color:  #fff;
+    --gray-color: #878484;
+    --black-color: #000000;
+    --red-color: #f10b0b;
+    --secondry-color:  #1d1de6;
+    --main-backgrund-color: #99d2ec;
+}
+.links{
+    color: var(--white-color);
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+

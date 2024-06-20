@@ -1,6 +1,51 @@
 .sideBar{
     height: 100%;
     width: 30%;
-    background-color: #fff6f6;
+    background-color: var(--white-color);
 
+}
+.dataContainer{
+    height: 13vh;
+    /* background-color: pink; */
+    padding: 1em 0 0 1em;
+    display: flex;
+    /* border-bottom: 3px solid black; */
+}
+.image{
+    height: 10vh;
+    border-radius: 50%;
+}
+.nameBox{
+    margin-left: 1em;
+    font-size: 1.6em;
+}
+strong{
+    color: var(--primary-color);
+}
+.line{
+    width: 15em;
+    margin: 1.4em 4em 0 3em;
+    height: 3px;
+    background-color: var(--primary-color);
+    border: none;
+}
+.information{
+    margin: 2em 0 0 2em;
+    font-size: 1.5em;
+
+}
+.todaysTask{
+    display: flex;
+    margin-bottom: 1.5em;
+}
+.filterData{
+    margin: 0 0 0 1.5em;
+    
+}
+.filter{
+    margin: 1em 0 0 0;
+    color: var(--black-color);
+}
+.dotIcon{
+    color: var(--blue-color);
 }

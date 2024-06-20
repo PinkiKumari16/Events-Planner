@@ -3,8 +3,11 @@ import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 
 import './App.css'
 import { Home } from './pages/Home';
-import { SignUp } from './pages/SignUp';
-import { LogIn } from './pages/LogIn';
+import { LogInPage } from './pages/LogInPage';
+import { SignupPage } from './pages/SignupPage';
+import { styled } from '@mui/material';
+
+
 
 function App() {
 
@@ -12,15 +15,15 @@ function App() {
     <BrowserRouter>
       <nav className='navBar'>
         <ul>
-          <li><Link to='/'>Events Planner</Link></li>
-          <li><Link to='/signup'>Sign Up</Link></li>
-          <li><Link to='/login'>Log In</Link></li>
+          <li><Link to='/' className='links'>Events Planner</Link></li>
+          <li><Link to='/signup' className='links'>Sign Up</Link></li>
+          <li><Link to='/login' className='links'>Log In</Link></li>
         </ul>
       </nav>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/signup' element={<SignUp/>}/>
-        <Route path='/login' element={<LogIn />}/>
+        <Route path='/signup' element={<SignupPage/>}/>
+        <Route path='/login' element={<LogInPage  />}/>
       </Routes>
     </BrowserRouter>
   )
