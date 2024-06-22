@@ -10,7 +10,6 @@ import { styled } from '@mui/material';
 
 
 function App() {
-
   return (
     <BrowserRouter>
       <nav className='navBar'>

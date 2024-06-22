@@ -1,15 +1,13 @@
 .sideBar{
     height: 100%;
-    width: 30%;
+    width: 23rem;
     background-color: var(--white-color);
 
 }
 .dataContainer{
     height: 13vh;
-    /* background-color: pink; */
     padding: 1em 0 0 1em;
     display: flex;
-    /* border-bottom: 3px solid black; */
 }
 .image{
     height: 10vh;
@@ -48,4 +46,32 @@ strong{
 }
 .dotIcon{
     color: var(--blue-color);
+}
+@media (max-width: 1200px) {
+    .sideBar{
+        width: 12rem;
+    }
+    .dataContainer{
+        padding: 0.5em;
+    }
+    .nameBox{
+        margin-top: 1em;
+        font-size: 1em;
+    }
+    .line{
+        width: 10em;
+        margin: 1.4em 5em 0 2em;
+    }
+    .information{
+        margin: 2em 0 0 0.5em;
+        font-size: 1.5em;
+    
+    }
+    .filterData {
+        margin: 0 0 0 1em;
+        font-size: 1em;
+    }    
+    .todaysTask{
+        font-size: 0.7em;
+    }
 }

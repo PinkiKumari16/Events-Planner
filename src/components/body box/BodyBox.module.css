@@ -1,10 +1,16 @@
 .mainBox{
     height: 81vh;
     width: 60vw;
-    /* background-color: pink; */
     border: 5px solid white;
     border-radius: 1em;
     background-color: transparent;
     display: flex;
     margin: 5.5em 20em 0 23em;
+    box-shadow: gray 0 0 10px;
+}
+@media (max-width: 1200px) {
+    .mainBox{
+        margin: 3em 20em 0 5em;
+        width: 80vw;
+    }
 }

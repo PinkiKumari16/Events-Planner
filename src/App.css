@@ -1,8 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-    /* -webkit-font-smoothing: antialiased; */
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 
 body{
@@ -15,10 +15,10 @@ body{
 .navBar{
     height: 8vh;
     width: 100%;
-    background-color: #a39fe0;
     line-height: 7vh;
     font-size: 1.3em; 
-    box-shadow: 0 0 10px #2c292c;
+    box-shadow: 0 0 10px #222122;
+    background: linear-gradient(to right, #0cbaba, #380036);
 }
 
 ul{
@@ -37,7 +37,6 @@ li{
     --gray-color: #878484;
     --black-color: #000000;
     --red-color: #f10b0b;
-    --secondry-color:  #1d1de6;
     --main-backgrund-color: #99d2ec;
 }
 .links{
@@ -45,4 +44,39 @@ li{
     font-weight: bolder;
     font-size: 1.2em;
 }
-
+.pdfButton{
+    height: 6vh;
+    width: 5vw;
+    /* background-color: #a39fe0; */
+    position: absolute;
+    right: 26.5rem;
+    top: 11.5rem;
+    border-radius: 0.5em;
+    cursor: pointer;
+    color:  blue;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    /* border: 3px solid  #fff; */
+    padding: 3px;
+}
+.printData{
+    height: 100vh;
+    width: 100vw;
+}
+@media (max-width: 450px) {
+    .navBar{
+        height: 5vh;
+        font-size: 1em; 
+    }
+    
+}
+@media (max-width: 1200px) {
+    .navBar{
+        font-size: 1em; 
+    }
+    .pdfButton{
+        right: 7rem;
+        top: 7rem;
+    }
+    
+}

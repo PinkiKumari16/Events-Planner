@@ -15,7 +15,8 @@
     display: flex;
     justify-content: space-between;
     line-height: 3em;
-    width: 6vw;
+    width: 10vw;
+    /* background-color: aqua; */
 
 }
 .iteam{
@@ -27,4 +28,8 @@
 .dotIcon{
     color: var(--blue-color);
     margin: 0.4em;
+}
+.comp{
+    text-decoration: line-through;
+    color: green;
 }

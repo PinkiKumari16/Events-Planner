@@ -6,10 +6,10 @@ import {Main} from '../main content/Main'
 export const BodyBox = () => {
   return (
     <>
-        <div className={styles.mainBox}>
-            <SideBar />
-            <Main />
-        </div>
+      <div className={styles.mainBox}>
+          <SideBar />
+          <Main />
+      </div>
     </>
   )
 }

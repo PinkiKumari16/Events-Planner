@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Main.module.css'
-import { useState } from 'react'
 import {List} from '../list/List'
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
@@ -24,7 +23,12 @@ export const Main = () => {
 
         setText('')
     }
-  return (
+    const deleteIteam = (deleteTask) =>{
+        setWorkList(workList.filter((element)=>deleteTask !== element.text))
+        // console.log(workList)
+      }
+
+    return (
     <>
         <div className={styles.mainContent}>
             <h2>Today main focus</h2>
@@ -45,10 +49,10 @@ export const Main = () => {
                 </div>
             </form>
             <div className={styles.listContener}>
-                {workList.map((data)=><List task={data.text}  currentTime={data.currentTime} id={data.currentTime}/>)}
+                {workList.map((data)=><List task={data.text}  currentTime={data.currentTime} key={data.text} deleteIteam={deleteIteam}/>)}
             </div>
-
         </div>
+    
     </>
   )
 }
