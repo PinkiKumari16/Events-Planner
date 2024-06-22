@@ -2,6 +2,7 @@
     height: 100%;
     width: 23rem;
     background-color: var(--white-color);
+    transition: width 0.3 ease;
 
 }
 .dataContainer{
@@ -38,6 +39,7 @@ strong{
 }
 .filterData{
     margin: 0 0 0 1.5em;
+
     
 }
 .filter{
@@ -47,31 +49,165 @@ strong{
 .dotIcon{
     color: var(--blue-color);
 }
-@media (max-width: 1200px) {
-    .sideBar{
-        width: 12rem;
+
+/* Adjustments for large desktops */
+@media (max-width: 1440px) {
+    .sideBar {
+        width: 20rem;
     }
-    .dataContainer{
+}
+
+/* Adjustments for tablets */
+@media (max-width: 1024px) {
+    .sideBar {
+        width: 15rem;
+    }
+    .dataContainer {
         padding: 0.5em;
     }
-    .nameBox{
-        margin-top: 1em;
-        font-size: 1em;
+
+    .nameBox {
+        margin-top: 1.2em;
+        font-size: 1.2em;
     }
-    .line{
+
+    .line {
         width: 10em;
-        margin: 1.4em 5em 0 2em;
+        margin: 1.4em 4em 0 2em;
     }
-    .information{
-        margin: 2em 0 0 0.5em;
-        font-size: 1.5em;
-    
+
+    .information {
+        margin: 2em 0 0 1em;
+        font-size: 1.6em;
     }
+
     .filterData {
         margin: 0 0 0 1em;
         font-size: 1em;
-    }    
-    .todaysTask{
+    }
+
+    .todaysTask {
         font-size: 0.7em;
+    }
+}
+
+/* Adjustments for small tablets and large phones */
+@media (max-width: 768px) {
+    .sideBar {
+        width: 12rem;
+    }
+
+    .dataContainer {
+        padding: 0.5em;
+    }
+
+    .nameBox {
+        margin-top: 1em;
+        font-size: 1em;
+    }
+
+    .line {
+        width: 10em;
+        margin: 1.4em 5em 0 1em;
+    }
+
+    .information {
+        margin: 2em 0 0 0.5em;
+        font-size: 1.5em;
+    }
+
+    .filterData {
+        margin: 0 0 0 1em;
+        font-size: 1em;
+    }
+
+    .todaysTask {
+        font-size: 0.7em;
+    }
+}
+
+/* Adjustments for phones */
+@media (max-width: 450px) {
+    .sideBar {
+        width: 7rem;
+    }
+
+    .dataContainer {
+        padding: 0.3em;
+        height: 9vh;
+    }
+
+    .nameBox {
+        margin-top: 1em;
+        font-size: 0.8em;
+    }
+    .image{
+        height: 5vh;
+    }
+
+    .line {
+        width: 5em;
+        margin: 0.6em;
+    }
+
+    .information {
+        margin: 1.5em 0 0 0.3em;
+        font-size: 1.1em;
+    }
+    .todaysTask {
+        font-size: 0.6em;
+    }
+    .filterData {
+        margin:0.3em 0 0 0;
+        font-size: 0.7em;
+    }
+    .filter{
+        height: 3vh;
+
+    }
+    .iteams{
+        position: relative;
+        bottom: 1.3em;
+    
+    }
+    .dotIcon{
+        transform: scale(0.3);
+    }
+    .eventIcon{
+        transform: scale(0.5);
+    }
+}
+
+/* Adjustments for small phones */
+@media (max-width: 375px) {
+    .sideBar {
+        width: 5rem;
+    }
+
+    .dataContainer {
+        padding: 0.1em;
+        height: 7vh;
+    }
+    .nameBox {
+        margin-top: 1em;
+        font-size: 0.5em;
+    }
+    .image{
+        height: 4.5vh;
+    }
+
+    .line {
+        width: 4em;
+        margin: 0.5em;
+    }
+
+    .information {
+        margin: 1.5em 1.5em 1em 0.1em;
+        font-size: 1em;
+    }
+    .todaysTask {
+        font-size: 0.5em;
+        text-align: center;
+        margin-bottom: 2.5em;
     }
 }

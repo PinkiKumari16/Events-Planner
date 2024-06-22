@@ -10,11 +10,11 @@ export const List = ({task, currentTime, deleteIteam}) => {
     <>
       <div className={styles.listBox}>
         <FiberManualRecordIcon className={styles.dotIcon}/>
-        <h3 className={`${styles.iteam} ${(isChecked) ? styles.comp : ''}`}>{task}</h3>
+        <h3 className={`${styles.iteam} ${(isChecked) ? styles.done : ''}`}>{task}</h3>
         <div className={styles.timeAndCheckBox}>
           <h4>{currentTime}</h4>
-          <input type='checkbox' style={{transform: "scale(1.5)"}}  onClick={(e)=>setIsChecked(e.target.checked)}/>
-          <DeleteForeverIcon style={{marginTop: "0.5em"}} onClick={()=>deleteIteam(task)} />
+          <input type='checkbox' onClick={(e)=>setIsChecked(e.target.checked)} className={styles.checkBox} />
+          <DeleteForeverIcon onClick={()=>deleteIteam(task)} className={styles.deleteIcon}/>
         </div>
       </div>
     </>

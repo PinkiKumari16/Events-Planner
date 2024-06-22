@@ -35,17 +35,74 @@
     height: 90%;
     margin-top: 4em;
 }
-@media (max-width: 1200px) {
+
+@media (max-width: 1024px) {
     .mainContent{
-        padding: 1.5em;
-        width: 100%;
+        width: 85%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .mainContent{
+        padding: 1em 0 0 1.5em;
+        width: 75%;
     }
     .inputBox{
-        height: 2em;
-        padding: 0.3em;
+        height: 1.6em;
+        padding: 0.2em 0 0 1em;
     }
     .input{
         font-size: 0.7em;
     }
-    
+    .inputIcon{
+        gap: 0.3em;
+        margin-top: 0.5px;
+        transform: scale(0.6);
+    }
+}
+
+@media (max-width: 450px) {
+    .mainContent{
+        padding: 0.8em 0 0 1em;
+        width: 100%;
+    }
+    .h2,h1{
+        font-size: 1em;
+    }
+    .inputBox{
+        height: 1.2em;
+        padding: 0 0 0 0.5em;
+        margin-top: 1em;
+    }
+    .input{
+        font-size: 0.6em;
+    }
+    .inputIcon{
+        margin-bottom: 10px;
+        transform: scale(0.5);
+    }
+    .listContener{
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 375px) {
+    .h2,h1{
+        font-size: 0.7em;
+    }
+    .inputBox{
+        height: 1em;
+        padding: 0.2em 0 0 0.5em;
+    }
+    .input{
+        font-size: 0.4em;
+    }
+    .inputIcon{
+        margin-bottom: 13px;
+        transform: scale(0.4);
+    }
+    .listContener{
+        margin-top: 1.5em;
+    }
 }

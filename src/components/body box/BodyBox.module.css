@@ -8,9 +8,41 @@
     margin: 5.5em 20em 0 23em;
     box-shadow: gray 0 0 10px;
 }
-@media (max-width: 1200px) {
-    .mainBox{
-        margin: 3em 20em 0 5em;
-        width: 80vw;
+@media (max-width: 1440px) {
+    .mainBox {
+        height: 79vh;
+        width: 70vw;
+        margin: 5em 15em 0 15em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .mainBox {
+        width: 85vw;
+        margin: 4em 5em 0 4em;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainBox {
+        margin: 3em 2em 0 3em;
+        height: 75vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .mainBox {
+        width: 83vw;
+        margin: 2em 1em 0 2em;
+        border-width: 3px; 
+        height: 55vh;
+    }
+}
+
+@media (max-width: 375px) {
+    .mainBox {
+        margin: 1em 0.5em 0 2em;
+        border-width: 2px; 
+        height: 50vh;
     }
 }

@@ -19,21 +19,21 @@ export const SideBar = () => {
           <hr className={styles.line} />
           <div className={styles.information}>
             <div className={styles.todaysTask}>
-               <EventIcon />
+               <EventIcon className={styles.eventIcon} />
                <div className={styles.filterData}>
                   <p style={{color: 'var(--black-color)'}}>Today tasks</p>
-                  <p className={styles.filter}><FiberManualRecordIcon className={styles.dotIcon}/> Perssonal</p>
-                  <p className={styles.filter}><FiberManualRecordIcon className={styles.dotIcon}/> FreeLance</p>
-                  <p className={styles.filter}><FiberManualRecordIcon className={styles.dotIcon}/> Work</p>
-                  <p className={styles.filter}><FiberManualRecordIcon className={styles.dotIcon}/> Add filter</p>
+                  <p className={styles.filter}><FiberManualRecordIcon className={styles.dotIcon}/> <span className={styles.iteams}>Perssonal</span></p>
+                  <p className={styles.filter}><FiberManualRecordIcon className={styles.dotIcon}/> <span className={styles.iteams}>FreeLance</span></p>
+                  <p className={styles.filter}><FiberManualRecordIcon className={styles.dotIcon}/> <span className={styles.iteams}>Work</span></p>
+                  <p className={styles.filter}><FiberManualRecordIcon className={styles.dotIcon}/> <span className={styles.iteams}>Add filter</span></p>
                 </div>
             </div>
             <div className={styles.todaysTask}>
-              <EventRepeatIcon />
+              <EventRepeatIcon className={styles.eventIcon}/>
               <p style={{marginLeft:'1.5em', color: 'var(--black-color)'}}>Scheduled tasks</p>
             </div>
             <div className={styles.todaysTask}>
-              <SettingsIcon />
+              <SettingsIcon className={styles.eventIcon}/>
               <p style={{marginLeft:'1.5em', color: 'var(--black-color)'}}>Settings</p>
             </div>
           </div>

@@ -5,7 +5,7 @@ import './App.css'
 import { Home } from './pages/Home';
 import { LogInPage } from './pages/LogInPage';
 import { SignupPage } from './pages/SignupPage';
-import { styled } from '@mui/material';
+// import { styled } from '@mui/material';
 
 
 
@@ -13,6 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <nav className='navBar'>
+        <h1 style={{color: '#fff'}}>Good Morning</h1>
         <ul>
           <li><Link to='/' className='links'>Events Planner</Link></li>
           <li><Link to='/signup' className='links'>Sign Up</Link></li>

@@ -25,11 +25,123 @@
 
     
 }
+.deleteIcon{
+    margin-top: 0.5em;
+    cursor: pointer;
+}
 .dotIcon{
     color: var(--blue-color);
-    margin: 0.4em;
+    margin: 0.5em;
 }
-.comp{
+.checkBox{
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.done{
     text-decoration: line-through;
     color: green;
+}
+@media (max-width: 1440px) {
+    .listBox {
+        height: 2.5em;
+        width: 85%;
+        margin: 0 0 0.6em 1em;
+        padding: 0 0.4em 0 0;
+    }
+    .timeAndCheckBox {
+        width: 12vw;
+        line-height: 2.5em;
+        transform: scale(0.8);
+    }
+    .iteam {
+        padding: 0.5em 0 0 0;
+    }
+    .dotIcon {
+        margin: 0.3em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .listBox {
+        padding: 0 0.2em 0 0;
+    }
+    .timeAndCheckBox {
+        width: 18vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .listBox {
+        padding: 0 0.2em 0 0;
+        height: 2em;
+    }
+    .timeAndCheckBox {
+        width: 20vw;
+        transform: scale(0.7);
+    }
+    .iteam {
+        padding: 0.5em 0 0 0;
+        width: 75%;
+        font-size: 1em;
+    }
+    .dotIcon {
+        margin: 0.2em 0 0.2em 0.2em;
+        transform: scale(0.7);
+    }
+    .checkBox{
+        transform: scale(1.3);
+    }
+}
+
+@media (max-width: 450px) {
+    .listBox {
+        margin: 0 0 0 1em;
+        padding: 0;
+        height: 1.3em;
+    }
+    .timeAndCheckBox {
+        width: 50%;
+        transform: scale(0.5);
+        font-size: 0.6em;
+        margin-right: -1.8em;
+    }
+    .iteam {
+        padding: 0.7em 0 0 0;
+        width: 65%;
+        font-size: 0.6em;
+    }
+    .dotIcon {
+        margin: 0 0 0.5em 0;
+        transform: scale(0.4);
+    }
+    .checkBox{
+        transform: scale(1.1);
+    }
+    .deleteIcon{
+        margin-top: 0em;
+    }
+}
+
+@media (max-width: 375px) {
+    .timeAndCheckBox {
+        width: 60%;
+        transform: scale(0.5);
+        font-size: 0.5em;
+        margin-right: -1.5em;
+    }
+    .iteam {
+        padding: 0.3em 0 0 0;
+        width: 50%;
+        font-size: 0.5em;
+        margin-left: -0.4em;
+    }
+    .listBox{
+        height: 1em;
+    }
+    .dotIcon {
+        margin: -0.2em 0 0 0;
+    }
+    .deleteIcon{
+        margin-top: -0.2em;
+    }
 }

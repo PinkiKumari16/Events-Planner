@@ -19,11 +19,16 @@ body{
     font-size: 1.3em; 
     box-shadow: 0 0 10px #222122;
     background: linear-gradient(to right, #0cbaba, #380036);
+    box-sizing: border-box;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul{
     display: flex;
     justify-content:space-around;
+    width: 50%;
 }
 
 li{
@@ -63,20 +68,68 @@ li{
     height: 100vh;
     width: 100vw;
 }
-@media (max-width: 450px) {
-    .navBar{
-        height: 5vh;
-        font-size: 1em; 
+
+@media (max-width: 1440px) {
+    .navBar {
+        font-size: 1.2em;
     }
-    
+    .pdfButton {
+        right: 13rem;
+        top: 10rem;
+        width: 6vw;
+        font-size: 1em;
+    }
 }
-@media (max-width: 1200px) {
-    .navBar{
-        font-size: 1em; 
+
+@media (max-width: 1024px) {
+    .navBar {
+        font-size: 1em;
+        padding: 0 0.5rem;
     }
-    .pdfButton{
-        right: 7rem;
+    .pdfButton {
+        right: 6rem;
+        top: 8.5rem;
+        width: 8vw;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        font-size: 0.9em;
+        padding: 0 0.5rem;
+    }
+    .pdfButton {
+        right: 5rem;
         top: 7rem;
+        width: 9vw;
+        font-size: 0.7em;
     }
-    
+}
+
+@media (max-width: 450px) {
+    .navBar {
+        font-size: 0.8em;
+        padding: 0 0.5rem;
+        height: 6vh;
+    }
+    .pdfButton {
+        right: 3rem;
+        top: 4.5rem;
+        width: 10vw;
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width: 375px) {
+    .navBar {
+        font-size: 0.7em;
+        padding: 0 0.5rem;
+    }
+    .pdfButton {
+        right: 2.2rem;
+        top: 3.5rem;
+        width: 11vw;
+        font-size: 0.4em;
+    }
 }

@@ -31,8 +31,8 @@ export const Main = () => {
     return (
     <>
         <div className={styles.mainContent}>
-            <h2>Today main focus</h2>
-            <h1 style={{color: 'var(--white-color)'}}> Design team metting</h1>
+            <h2 className={styles.h2}>Today main focus</h2>
+            <h1 style={{color: 'var(--white-color)'}} className={styles.h1}> Design team metting</h1>
             <form onSubmit={handleSubmit}>
                 <div className={styles.inputBox}>
                     <input 
