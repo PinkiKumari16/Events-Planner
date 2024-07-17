@@ -4,23 +4,21 @@ import {List} from '../list/List'
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
+
 export const Main = () => {
     let [text, setText] = useState('');
     let [workList, setWorkList] = useState([]);
-    // let [currDate, setCurrDate] = useState('');
 
     let handleSubmit = (e) => {
         e.preventDefault()
-
         let date = new Date();
         let hour = date.getHours();
         let mintues = date.getMinutes();
         let timeZon = (hour>=12)? `PM` : `AM`;
         let currentTime = `${hour}:${mintues} `+timeZon;
-        // setWorkList([text, ...workList])
+      
 
         setWorkList([{currentTime:currentTime, text:text}, ...workList])
-
         setText('')
     }
     const deleteIteam = (deleteTask) =>{
