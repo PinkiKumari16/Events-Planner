@@ -1,6 +1,6 @@
 .sideBar{
     height: 100%;
-    width: 21rem;
+    width: 23rem;
     background-color: var(--white-color);
     transition: width 0.3 ease;
 
