@@ -1,8 +1,10 @@
 .sideBar{
     height: 100%;
-    width: 21rem;
+    width: 23rem;
     background-color: var(--white-color);
     transition: width 0.3 ease;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
 
 }
 .dataContainer{
