@@ -30,11 +30,11 @@ export const SideBar = () => {
             </div>
             <div className={styles.todaysTask}>
               <EventRepeatIcon className={styles.eventIcon}/>
-              <p style={{marginLeft:'1.5em', color: 'var(--black-color)'}}>Scheduled tasks</p>
+              <p style={{marginLeft:'15%', color: 'var(--black-color)'}}>Scheduled tasks</p>
             </div>
             <div className={styles.todaysTask}>
               <SettingsIcon className={styles.eventIcon}/>
-              <p style={{marginLeft:'1.5em', color: 'var(--black-color)'}}>Settings</p>
+              <p style={{marginLeft:'15%', color: 'var(--black-color)'}}>Settings</p>
             </div>
           </div>
         </div>
